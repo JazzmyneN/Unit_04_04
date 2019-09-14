@@ -1,0 +1,127 @@
+﻿/*requirements:
+character encoding: line 12
+web font: line 13
+background color (name): line 42
+background color (value): line 39
+semi-transparent color: line 60
+nested, child, id elements: line 71, 49, and 71 again
+list marker change: line 81
+padding and margin edit: line 117, line 118
+generate content: line 98
+*/
+@charset "UTF-8";
+@font-face {
+   font-family: FancyHeader;
+   src:url(cac_champagne.ttf) format('truetype'),
+       url(cac_champagne.woff) format('woff');
+}
+@font-face {
+   font-family: FancyHeader2;
+   src:url(DobkinPlain.ttf) format('truetype'),
+       url(DobkinPlain.woff) format('woff');
+}
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Jazzmyne Nixon
+   Date: 9/12/2019
+   
+   Filename: lake_styles.css
+
+*/
+
+/*structural*/
+html {
+   background-color: #dbedff;
+}
+body {
+   background-color: white;
+   color:rgba(61, 0, 37, 0.8);
+   font-family: 'Arima Madurai', cursive;
+ 
+}
+
+/*header links*/
+header nav > ul > li > a {
+   text-decoration: none;
+   text-align: center;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   background-color: #f7e6ff;
+   font-family: FancyHeader2;
+   font-size: 1.5em;
+   color:rgba(61, 0, 37, 0.8);
+}
+header nav > ul > li > a:hover {
+   background-color: rgba(61, 0, 37, 0.5);
+
+}
+header nav > ul > li {
+   width: 16.6667%;
+}
+
+/*right column*/
+section#rightcol  {
+   background-color:#FFE7D2;
+}
+section#rightcol h2 {
+   font-family: FancyHeader2;
+   font-size: 2em;
+}
+section#rightcol nav a {
+   text-decoration: none;
+   color:rgba(61, 0, 37, 0.8);
+}
+
+section#rightcol nav li {
+   list-style-type: square;
+}
+section#rightcol nav {
+   padding-left: 45px;
+   letter-spacing: 0.10em;
+   
+}
+section#rightcol blockquote {
+   padding-top: 50px;
+   font-size: 1.25em;
+   line-height: 1.75em;
+}
+section#rightcol blockquote:before {
+   content: open-quote;
+   font-size: 1.5em;
+}
+section#rightcol blockquote:after {
+   content: close-quote;
+   font-size: 1.5em;
+}
+
+/*left column*/
+section#leftcol {
+   background-color: #f2f9ff;
+  
+}
+section#leftcol h1 {
+   font-family: FancyHeader2;
+   padding-left: 50px;
+}
+section#leftcol aside h2 {
+   font-family: FancyHeader;
+   font-size: 1.2em;
+}
+section#leftcol p {
+   padding-left: 30px;
+   padding-right: 30px;
+   margin: 10px;
+}
+
+/*footer*/
+footer {
+   text-align: center;
+   padding-top:5px;
+   padding-bottom:5px;
+   background-color: #f7e6ff;
+}
